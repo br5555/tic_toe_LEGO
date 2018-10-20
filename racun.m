@@ -1,0 +1,10 @@
+sliderValue=get(handles.rotacija1,'Value');
+sliderValue2=get(handles.rotacija2,'Value');
+theta1=sliderValue*pi/180;
+theta2=-sliderValue2*pi/180;
+x=17.8*cos(theta1)-10.5*cos(pi-theta1-theta2)+8.5;
+y=17.8*sin(theta1)+10.5*sin(pi-theta1-theta2)+1.25;
+% x=15.5*cos(theta1)+cos(23*pi/90)*2.5+10.5*cos(theta1+theta2)+8.5;
+% y=15.5*sin(theta1)-cos(11*pi/45)*2.5+10.5*sin(theta1+theta2)+1.25;
+%  x=8*cos(theta1)-6.3*cos(pi-theta1-theta2)+3.5;
+%  y=8*sin(theta1)+6.3*sin(pi-theta1-theta2);
